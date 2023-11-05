@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginIntro">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TextView
+            android:id="@+id/loginIntroHeading"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="For Support"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnbback"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:fontFamily="@font/manrope_bold"
+            android:text="BACK"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/zemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:text="zamirparasara@gmail.com"
+            android:textColor="@color/purple_700"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnbback"
+            app:layout_constraintTop_toBottomOf="@+id/loginIntroHeading"
+            app:layout_constraintVertical_bias="0.271"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/semail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="email"
+            android:text="sijanrazvi786@gmail.com"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnbback"
+            app:layout_constraintTop_toBottomOf="@+id/loginIntroHeading"
+            app:layout_constraintVertical_bias="0.333"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:text="You have any qurey in our application please contact our team any time.."
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/zemail"
+            app:layout_constraintTop_toBottomOf="@+id/loginIntroHeading"
+            app:layout_constraintVertical_bias="0.19"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devloped By RK University Student"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

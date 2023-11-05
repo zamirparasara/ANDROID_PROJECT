@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintBottom_toTopOf="@id/loginIntroImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageView
+            android:id="@+id/loginIntroHeadImage"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/undraw_secure_login_pdn4" />
+
+        <TextView
+            android:id="@+id/loginText"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_bold"
+            android:text="Login Now" />
+
+        <TextView
+            android:id="@+id/loginText2"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="Please log in to continue using app" />
+
+        <EditText
+            android:id="@+id/loginEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/button_bar"
+            android:ems="10"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bar"
+            android:ems="10"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="Log in" />
+
+        <TextView
+            android:id="@+id/loginSignUpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/manrope_bold"
+            android:text="Don't have an account? Sign Up"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/loginIntroImage"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_wave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
